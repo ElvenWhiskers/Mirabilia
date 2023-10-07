@@ -1,0 +1,7 @@
+#Items
+item.mira.aegis_ingot.name=Aegis Ingot
+
+#Blocks
+tile.mbe01_block_simple_unlocalised_name.name=Test Block 1
+tile.mira.solidblock_aegis.name=Aegis Block
+tile.mira.solidblock_opal.name=Opal Block
