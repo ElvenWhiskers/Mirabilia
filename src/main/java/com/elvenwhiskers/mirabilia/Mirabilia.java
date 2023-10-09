@@ -1,6 +1,9 @@
 package com.elvenwhiskers.mirabilia;
 
+import com.elvenwhiskers.mirabilia.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -22,8 +25,10 @@ public class Mirabilia
 
     public Mirabilia()
     {
-        //Random comment to check github
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -32,7 +37,11 @@ public class Mirabilia
 
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
-    private void addCreative(BuildCreativeModeTabContentsEvent event) { }
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.AEGIS_INGOT);
+        }
+    }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {

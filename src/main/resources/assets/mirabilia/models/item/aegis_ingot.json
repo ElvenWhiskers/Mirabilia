@@ -1,6 +1,6 @@
 {
-  "parent" : "item/generated",
-  "textures" : {
-    "layer0" : "mira:items/aegis_ingot"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mirabilia:item/aegis_ingot"
   }
 }
