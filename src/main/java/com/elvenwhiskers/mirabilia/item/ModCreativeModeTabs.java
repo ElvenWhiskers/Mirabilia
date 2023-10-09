@@ -26,6 +26,17 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RAW_AEGIS_BLOCK.get());
                         pOutput.accept(ModBlocks.AEGIS_ORE.get());
 
+                        pOutput.accept(ModBlocks.AEGIS_STAIRS.get());
+                        pOutput.accept(ModBlocks.AEGIS_SLAB.get());
+                        pOutput.accept(ModBlocks.AEGIS_BUTTON.get());
+
+                        pOutput.accept(ModBlocks.AEGIS_FENCE.get());
+                        pOutput.accept(ModBlocks.AEGIS_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.AEGIS_WALL.get());
+
+                        pOutput.accept(ModBlocks.AEGIS_DOOR.get());
+                        pOutput.accept(ModBlocks.AEGIS_TRAPDOOR.get());
+
 
                     })
                     .build());

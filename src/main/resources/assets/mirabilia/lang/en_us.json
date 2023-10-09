@@ -5,6 +5,15 @@
     "block.mirabilia.aegis_block": "Aegis Block",
     "block.mirabilia.raw_aegis_block": "Raw Aegis Block",
     "block.mirabilia.aegis_ore": "Aegis Ore",
+    "block.mirabilia.aegis_stairs": "Aegis Stairs",
+    "block.mirabilia.aegis_slab": "Aegis Slab",
+    "block.mirabilia.aegis_button": "Aegis Button",
+    "block.mirabilia.aegis_fence": "Aegis Fence",
+    "block.mirabilia.aegis_fence_gate": "Aegis Fence Gate",
+    "block.mirabilia.aegis_wall": "Aegis Wall",
+    "block.mirabilia.aegis_door": "Aegis Door",
+    "block.mirabilia.aegis_trapdoor": "Aegis Trapdoor",
+
 
     "creativetab.mirabilia_tab": "Mirabilia Tab"
 }

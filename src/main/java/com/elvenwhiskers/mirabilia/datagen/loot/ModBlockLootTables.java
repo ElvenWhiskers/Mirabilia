@@ -29,6 +29,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.AEGIS_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.AEGIS_ORE.get(), ModItems.RAW_AEGIS.get()));
 
+        this.dropSelf(ModBlocks.AEGIS_STAIRS.get());
+        this.dropSelf(ModBlocks.AEGIS_BUTTON.get());
+        this.dropSelf(ModBlocks.AEGIS_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.AEGIS_FENCE.get());
+        this.dropSelf(ModBlocks.AEGIS_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.AEGIS_WALL.get());
+
+        this.add(ModBlocks.AEGIS_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.AEGIS_SLAB.get()));
+        this.add(ModBlocks.AEGIS_DOOR.get(),
+                block -> createDoorTable(ModBlocks.AEGIS_DOOR.get()));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
