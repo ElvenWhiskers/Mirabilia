@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.AEGIS_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_AEGIS_BLOCK.get());
+                        pOutput.accept(ModBlocks.AEGIS_ORE.get());
 
 
                     })

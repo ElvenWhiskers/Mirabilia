@@ -3,9 +3,7 @@ package com.elvenwhiskers.mirabilia;
 import com.elvenwhiskers.mirabilia.block.ModBlocks;
 import com.elvenwhiskers.mirabilia.item.ModCreativeModeTabs;
 import com.elvenwhiskers.mirabilia.item.ModItems;
-import com.elvenwhiskers.mirabilia.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -43,7 +41,7 @@ public class Mirabilia {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.AEGIS_INGOT);
+            //event.accept(ModItems.AEGIS_INGOT);
         }
     }
 

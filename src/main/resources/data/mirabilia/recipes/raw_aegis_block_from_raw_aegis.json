@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mirabilia:raw_aegis"
+    }
+  },
+  "result": {
+    "item": "mirabilia:raw_aegis_block"
+  }
+}
