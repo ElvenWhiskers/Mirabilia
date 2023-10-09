@@ -1,3 +1,9 @@
 {
-    "item.mirabilia.aegis_ingot": "Aegis Ingot"
+    "item.mirabilia.aegis_ingot": "Aegis Ingot",
+    "item.mirabilia.raw_aegis": "Raw Aegis",
+
+    "block.mirabilia.aegis_block": "Aegis Block",
+    "block.mirabilia.raw_aegis_block": "Raw Aegis Block",
+
+    "creativetab.mirabilia_tab": "Mirabilia Tab"
 }

@@ -1,5 +1,8 @@
 package com.elvenwhiskers.mirabilia;
 
+import com.elvenwhiskers.mirabilia.block.ModBlocks;
+import com.elvenwhiskers.mirabilia.item.ModCreativeModeTabs;
+import com.elvenwhiskers.mirabilia.item.ModItems;
 import com.elvenwhiskers.mirabilia.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,16 +21,16 @@ import org.slf4j.Logger;
 
 
 @Mod(Mirabilia.MODID)
-public class Mirabilia
-{
+public class Mirabilia {
     public static final String MODID = "mirabilia";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Mirabilia()
-    {
+    public Mirabilia() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -37,6 +40,7 @@ public class Mirabilia
 
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
+
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.AEGIS_INGOT);
