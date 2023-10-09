@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mirabilia:aegis_block"
+    }
+  ],
+  "result": {
+    "item": "mirabilia:aegis_ingot",
+    "count": 9
+  }
+}
