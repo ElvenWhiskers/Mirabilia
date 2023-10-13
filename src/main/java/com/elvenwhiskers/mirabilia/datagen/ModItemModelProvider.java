@@ -34,6 +34,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.AEGIS_FENCE_GATE);
 
         trapdoorItem(ModBlocks.AEGIS_TRAPDOOR);
+
+        simpleBlockItemBlockTexture(ModBlocks.PINK_PETUNIA);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -72,5 +74,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Mirabilia.MODID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(Mirabilia.MODID,"block/" + item.getId().getPath()));
     }
 }

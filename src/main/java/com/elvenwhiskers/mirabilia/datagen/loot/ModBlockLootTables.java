@@ -41,6 +41,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.AEGIS_DOOR.get(),
                 block -> createDoorTable(ModBlocks.AEGIS_DOOR.get()));
 
+        this.dropSelf(ModBlocks.PINK_PETUNIA.get());
+        this.add(ModBlocks.POTTED_PINK_PETUNIA.get(), createPotFlowerItemTable(ModBlocks.PINK_PETUNIA.get()));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

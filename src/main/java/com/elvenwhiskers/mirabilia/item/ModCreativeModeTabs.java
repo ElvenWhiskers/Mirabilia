@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.AEGIS_DOOR.get());
                         pOutput.accept(ModBlocks.AEGIS_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.PINK_PETUNIA.get());
 
 
                     })

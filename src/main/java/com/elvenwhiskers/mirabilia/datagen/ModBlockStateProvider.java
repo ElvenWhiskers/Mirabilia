@@ -3,6 +3,7 @@ package com.elvenwhiskers.mirabilia.datagen;
 import com.elvenwhiskers.mirabilia.Mirabilia;
 import com.elvenwhiskers.mirabilia.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -30,6 +31,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         doorBlockWithRenderType(((DoorBlock) ModBlocks.AEGIS_DOOR.get()), modLoc("block/aegis_door_bottom"), modLoc("block/aegis_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.AEGIS_TRAPDOOR.get()), modLoc("block/aegis_trapdoor"), true,  "cutout");
+
+        simpleBlockWithItem(ModBlocks.PINK_PETUNIA.get(), models().cross(blockTexture(ModBlocks.PINK_PETUNIA.get()).getPath(),
+                blockTexture(ModBlocks.PINK_PETUNIA.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.POTTED_PINK_PETUNIA.get(), models().singleTexture("potted_pink_petunia", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.PINK_PETUNIA.get())).renderType("cutout"));
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
