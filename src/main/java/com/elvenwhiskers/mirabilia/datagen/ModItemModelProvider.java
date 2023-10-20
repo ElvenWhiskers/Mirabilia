@@ -36,6 +36,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         trapdoorItem(ModBlocks.AEGIS_TRAPDOOR);
 
         simpleBlockItemBlockTexture(ModBlocks.PINK_PETUNIA);
+
+        saplingItem(ModBlocks.OPAL_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(Mirabilia.MODID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

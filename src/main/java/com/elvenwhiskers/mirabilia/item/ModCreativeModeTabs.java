@@ -39,6 +39,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_PETUNIA.get());
                         pOutput.accept(ModBlocks.BRIGHTSTONE.get());
 
+                        pOutput.accept(ModBlocks.OPAL_LOG.get());
+                        pOutput.accept(ModBlocks.OPAL_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_OPAL_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_OPAL_WOOD.get());
+                        pOutput.accept(ModBlocks.OPAL_PLANKS.get());
+                        pOutput.accept(ModBlocks.OPAL_LEAVES.get());
+                        pOutput.accept(ModBlocks.OPAL_SAPLING.get());
+
 
                     })
                     .build());

@@ -15,6 +15,13 @@
     "block.mirabilia.aegis_trapdoor": "Aegis Trapdoor",
     "block.mirabilia.pink_petunia": "Pink Petunia",
     "block.mirabilia.brightstone": "Brightstone",
+    "block.mirabilia.opal_log": "Opal Log",
+    "block.mirabilia.opal_wood": "Opal Wood",
+    "block.mirabilia.stripped_opal_log": "stripped Opal Log",
+    "block.mirabilia.stripped_opal_wood": "Stripped Opal Wood",
+    "block.mirabilia.opal_planks": "Opal Planks",
+    "block.mirabilia.opal_leaves": "Opal Leaves",
+    "block.mirabilia.opal_sapling": "Opal Sapling",
 
 
     "creativetab.mirabilia_tab": "Mirabilia Tab"

@@ -1,7 +1,10 @@
 package com.elvenwhiskers.mirabilia.block;
 
 import com.elvenwhiskers.mirabilia.Mirabilia;
+import com.elvenwhiskers.mirabilia.block.custom.ModFlammableRotatedPillarBlock;
 import com.elvenwhiskers.mirabilia.item.ModItems;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -9,8 +12,10 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -70,6 +75,43 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BRIGHTSTONE = registerBlock("brightstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> OPAL_LOG = registerBlock("opal_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> OPAL_WOOD = registerBlock("opal_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> STRIPPED_OPAL_LOG = registerBlock("stripped_opal_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> STRIPPED_OPAL_WOOD = registerBlock("stripped_opal_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> OPAL_PLANKS = registerBlock("opal_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> OPAL_LEAVES = registerBlock("opal_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final RegistryObject<Block> OPAL_SAPLING = registerBlock("opal_sapling",
+            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
 
 
 

@@ -57,6 +57,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.AEGIS_WALL.get());
 
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.OPAL_LOG.get())
+                .add(ModBlocks.OPAL_WOOD.get())
+                .add(ModBlocks.STRIPPED_OPAL_LOG.get())
+                .add(ModBlocks.STRIPPED_OPAL_WOOD.get());
 
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.OPAL_PLANKS.get());
+    }
+
+    @Override
+    public String getName() {
+        return "Block Tags";
     }
 }
