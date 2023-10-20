@@ -23,9 +23,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.AEGIS_BLOCK.get(),
                         ModBlocks.RAW_AEGIS_BLOCK.get(),
                         ModBlocks.AEGIS_ORE.get(),
-                        (ModBlocks.AEGIS_FENCE).get(),
-                        (ModBlocks.AEGIS_FENCE_GATE).get(),
-                        (ModBlocks.AEGIS_WALL).get());
+                        ModBlocks.AEGIS_FENCE.get(),
+                        ModBlocks.AEGIS_FENCE_GATE.get(),
+                        ModBlocks.AEGIS_WALL.get(),
+                        ModBlocks.BRIGHTSTONE.get()
+                        );
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -40,8 +42,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
                 //.add(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
-        this.tag(BlockTags.NEEDS_STONE_TOOL);
-                //.add(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.BRIGHTSTONE.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
                 //.add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());

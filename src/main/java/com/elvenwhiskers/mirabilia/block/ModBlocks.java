@@ -68,6 +68,9 @@ public class ModBlocks {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.PINK_PETUNIA,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).sound(SoundType.AMETHYST).noOcclusion()));
 
+    public static final RegistryObject<Block> BRIGHTSTONE = registerBlock("brightstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+
 
 
 

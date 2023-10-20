@@ -25,6 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.AEGIS_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_AEGIS_BLOCK.get());
+        this.dropSelf(ModBlocks.BRIGHTSTONE.get());
 
         this.add(ModBlocks.AEGIS_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.AEGIS_ORE.get(), ModItems.RAW_AEGIS.get()));

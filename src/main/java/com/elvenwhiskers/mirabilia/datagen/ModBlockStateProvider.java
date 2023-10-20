@@ -18,6 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.AEGIS_BLOCK);
         blockWithItem(ModBlocks.RAW_AEGIS_BLOCK);
+        blockWithItem(ModBlocks.BRIGHTSTONE);
 
         blockWithItem(ModBlocks.AEGIS_ORE);
 
