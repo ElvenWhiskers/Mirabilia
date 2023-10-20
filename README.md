@@ -1,1 +1,1 @@
-Just an initial readme file
+The Sore beginnings of a dimension mod
