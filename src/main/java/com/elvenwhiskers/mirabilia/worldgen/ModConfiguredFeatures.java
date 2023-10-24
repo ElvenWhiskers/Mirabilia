@@ -22,6 +22,7 @@ public class ModConfiguredFeatures {
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
 
+        //THIS is what the tree is SHAPED like.
         register(context, OPALIZED_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.OPAL_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),

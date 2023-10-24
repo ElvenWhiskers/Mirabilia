@@ -3,6 +3,7 @@ package com.elvenwhiskers.mirabilia.block;
 import com.elvenwhiskers.mirabilia.Mirabilia;
 import com.elvenwhiskers.mirabilia.block.custom.ModFlammableRotatedPillarBlock;
 import com.elvenwhiskers.mirabilia.item.ModItems;
+import com.elvenwhiskers.mirabilia.worldgen.tree.OpalTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
@@ -110,7 +111,7 @@ public class ModBlocks {
             });
 
     public static final RegistryObject<Block> OPAL_SAPLING = registerBlock("opal_sapling",
-            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new OpalTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
 
